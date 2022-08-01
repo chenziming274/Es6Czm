@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>const</title>
+  </head>
+  <body>
+   <script type='text/JavaScript'>
+    // const 声明常量
+
+    // 约定俗称. 常量的名称一般为 "大写" 如果为多个单词组成通过下划线进行连接
+    const NAME = "大白"
+    const FIRST_NAME = "陈"
+    // 1. 声明常量一定要赋值
+    // const NUM;
+
+    // 2. 不能修改常量的值
+    // const NUM = 1000
+    // NUM = 1
+
+    // 3. 不允许重复声明
+    // const NUM = 1
+    // const NUM = 10
+
+    // 4. 块级作用域
+    // if(true) {
+    //   const NUM = 1
+    // }
+    // console.log(NUM)
+
+
+    // 5. 关于数组和对象元素的修改
+    const ARRAY = [1,2,3,4,5]
+    ARRAY.push(6)
+    console.log(ARRAY)
+
+    const OBJECT = {
+      name:"大白",
+      age:1
+    }
+    OBJECT.age = 4
+    console.log(OBJECT)
+
+    // 对于基本数据类型 是不能被修改的
+    // 但是对于引用类型数据,他们的地址值是没变的,并没有修改引用类型数据的地址值,所以能进行修改,没有报错
+   </script>
+  </body>
+</html>

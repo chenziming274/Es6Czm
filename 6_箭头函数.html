@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>箭头函数</title>
+  </head>
+  <body>
+   <script type='text/JavaScript'>
+    // 箭头函数
+    // 1.声明格式
+    // let fn = ()=>{}
+    // 2.函数调用
+    // fn()
+
+
+    // 箭头函数的特点
+    // 1. this的值是静态的
+    // let main = ()=>{
+    //   console.log(this)
+    // }
+    // main.call({})
+
+    // 2. 不能作为构造函数使用
+    // let Fn = ()=>{}
+    // let f = new Fn()
+
+    // 3. 不能使用arguments
+    // function add() {
+    //   console.log(arguments)
+    // }
+    // add(1,2,3,4,5)
+
+    // let num = ()=>{
+    //   console.log(arguments)
+    // }
+    // num(1,2,3,4,5)
+
+
+    // 4. 箭头函数的简写
+    // 4.1 不写小括号的情况,当形参有且只有一个的时候可以不写
+    // let fn = item => {
+    //   return item * item
+    // }
+    // console.log(fn(8))
+    // 4.2 不写大括号的情况,当代码体只有一条语句的时候,且语句的执行结构为函数返回值的
+    let fn = item => item * item
+    console.log(fn(7))
+
+   </script>
+  </body>
+</html>

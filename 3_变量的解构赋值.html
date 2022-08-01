@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>变量的结构复制</title>
+  </head>
+  <body>
+   <script type='text/JavaScript'>
+    // 解构赋值
+    // 数组的解构赋值
+    let arr = ["老大","老二","老三"]
+    // let first = arr[0]
+    // let second = arr[1]
+    // let third = arr[2]
+    let [first,second,third] = arr
+    console.log(first,second,third)
+
+    // 对象的解构赋值
+    // let obj = {
+    //   name:"大白",
+    //   age:1,
+    //   sport:function(){
+    //     console.log("运动")
+    //   }
+    // }
+    // let name = obj.name
+    // let age = obj.age
+    // let sport = obj.sport
+    // let {name,age,sport} = obj
+    // console.log(name,age,sport)
+
+
+
+    // 复杂结构的解构
+    let obj = {
+      name:"陈子铭",
+      age:1,
+      have:["手机","电脑","衣服","耳机"]
+    }
+    // 此时的需求是快速的知道我有什么
+    let {name,age,have:[phone,computer]} = obj
+    console.log(phone,computer)
+   </script>
+  </body>
+</html>

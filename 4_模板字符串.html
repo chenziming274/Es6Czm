@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>模板字符串</title>
+  </head>
+  <body>
+    
+   <script type='text/JavaScript'>
+    // 模板字符串
+    let str = `我是大白`
+    // 1. 在字符串中直接换行
+    let html = `<ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>`
+    console.log(html)
+    
+    // 2. 可以直接拼接变量
+    let name = "陈子铭"
+    // let text = "我是"+ name +" , 今天天气真好"
+    // let text = `我是${name},今天天气真好`
+    // let text = `我是${1+99},今天天气真好`
+    let text = `我是${name.substr(1,2)},今天天气真好`
+    console.log(text)
+   </script>
+  </body>
+</html>

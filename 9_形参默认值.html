@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>ES6参数默认值</title>
+  </head>
+  <body>
+   <script type='text/JavaScript'>
+    // ES6参数默认值
+    // 1. 参数直接设置默认值
+    function add(a,b,c = 10) {
+      console.log(a + b + c)
+      return a + b + c
+    }
+    add(1,2)
+    // 2. 与解构赋值结合使用
+    function connect({name="老黄",age}) {
+      console.log(name)
+    }
+
+    connect({
+      age:1
+    })
+   </script>
+  </body>
+</html>
